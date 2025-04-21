@@ -1,0 +1,19 @@
+app:
+  name: onlineShop
+  port: ":4000"
+  encryption:
+    salt: 10
+    jwt_secret: iniAdalahSecretToken
+
+db:
+  host: localhost
+  port: 5432
+  name: onlineShop
+  user: postgres
+  password: mh217512
+  connection_pool:
+    max_idle_connection: 10
+    max_open_connection: 30
+    max_lifetime_connection: 60 #second
+    max_idletime_connection: 60 #second
+
